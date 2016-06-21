@@ -69,20 +69,56 @@ table {
 /* STARTS HERE */
 
 .box {
-  width: 410px;
-  border: 1px solid blue;
+  width: 390px;
+  border: 4px solid #494949;
   margin: 80px auto;
   text-align: center;
+  background: #353535;
+  padding: 10px;
+  font-family: arial, sans-serif;
+}
+
+h1 {
+  color: #D1DBDD;
+  font-size: 2.3em;
+  margin-bottom: 15px;
+}
+
+.lcd {
+  background: #B1F3BD;
+  width: 97%;
+  height: 80px;
+  margin: 5px;
+  padding: 10px;
+  text-align: right;
+  font-size: 4em;
+  border: 2px solid #000000;
 }
 
 .number, .operator {
   float: left;
-  width: 100px;
-  height: 100px;
-  border: 1px solid #AAAAAA;
-  font-family: arial, sans-serif;
-  padding: 20px;
-  font-size: 3em;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px;
+  font-size: 3.5em;
+  color: #B1F3BD;
+}
+
+.number {
+  background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+}
+
+.operator {
+  background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+}
+
+.number:hover, .operator:hover {
+  border: 2px solid #B1F3BD;
+  cursor: pointer;
 }
 
 .number {}
